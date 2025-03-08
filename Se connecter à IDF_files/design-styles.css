@@ -1,0 +1,419 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.kc-header-class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9rem;
+}
+
+.kc-header-wrapper {
+    display: flex;
+}
+
+.kc-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem;
+}
+
+.kc-banner>img {
+    width: 60%;
+}
+
+.kc-login-account-title {
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'poppinsbold';
+    margin-top: 1.55rem;
+    line-height: 1.6rem;
+}
+
+.kc-login-account-sub-title {
+    font-size: 0.93rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+/*#input-error-password, #input-error, #input-error-password, #input-error-password-confirm {*/
+/*    height: 1.5rem;*/
+/*    font-size: small;*/
+/*    display: flex;*/
+/*}*/
+
+.kc-input-error-message{
+    min-height: 1.5rem;
+    font-size: small;
+    display: flex;
+}
+
+#username {
+    flex: auto;
+}
+
+.kc-input-error-icon-show, .kc-input-error-icon-hide {
+    display: flex;
+    position: absolute;
+    top: 30%;
+    right: 1rem;
+    width: 2rem;
+}
+
+#kc-form-wrapper {
+    margin: 2rem;
+}
+
+.kc-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.kc-form-group>label {
+    margin: 0 0 0.3rem 1rem;
+}
+
+.kc-input-group {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#password {
+    flex: auto;
+}
+
+.kc-form-password-visibility-button {
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    top: 30%;
+    right: 1rem;
+    border: none;
+    /*border-radius: 0px 2px 2px 0px;*/
+}
+
+.kc-form-password-visibility-button:hover {
+    cursor: pointer;
+}
+
+.kc-form-password-visibility-icon-show {
+    width: 1.5rem;
+    height: auto;
+
+    visibility: visible;
+}
+
+.kc-form-password-visibility-icon-hide {
+    width: 1.5rem;
+    height: auto;
+
+    visibility: visible;
+}
+
+#kc-form-buttons {
+    margin-top: 2.5rem;
+}
+
+.kc-button {
+    border-style: none;
+    padding: 0.9rem 1.2rem 0.9rem 1.2rem;
+    border-radius: 70px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background-color .35s ease, border .35s ease;
+}
+
+.kc-button:hover {
+    cursor: pointer;
+}
+
+.kc-form-options-wrapper {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.kc-form-options-span {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.kc-alert {
+    font-size: small;
+    margin: 0 2rem;
+}
+
+footer {
+    padding: calc(1.5rem + 2.5vw);
+}
+
+#footer h3 {
+    color: var(--idf-white);
+    font-family: var(--stack-r);
+    font-size: 0.95em;
+}
+
+footer>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.footer-margin-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-margin-div>img {
+    max-width: 12rem;
+}
+
+.logo-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.logo-list.application {
+    margin-top: 0.5rem;
+}
+
+
+#kc-logout-confirm {
+    margin: 1rem 0 5rem 0;
+}
+#kc-logout-confirm>p {
+    margin: 0 0 2rem 0;
+}
+#kc-passwd-update-form {
+    margin: 0 1rem 1rem 1rem;
+}
+
+.instruction {
+    display: flex;
+    justify-content: center;
+}
+
+.form-actions {
+    margin: 0 1rem;
+}
+
+#firstname {
+    margin: 0rem 0 1rem 0;
+}
+
+#kc-terms-text{
+    margin: 2.5rem;
+    max-width:50rem;
+}
+.wrap {
+    margin: 1rem 0;
+}
+
+#kc-terms-text + #kc-form form.form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-height: 600px){
+    #kc-content {
+        margin: 0!important;
+    }
+    .kc-form-group-buttons {
+        margin-top: 0!important;
+    }
+    .kc-banner {
+        padding: 0;
+    }
+    .kc-banner img {
+        max-width: 14rem!important;
+    }
+
+}
+
+
+#password-validation-wrapper {
+    margin: 1rem 0 1rem 0;
+}
+
+.check-container {
+    position: relative;
+    top: 0.3rem;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+}
+
+.cross {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    top: 7px;
+    left: 5px;
+}
+.checkmark {
+    position: absolute;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    right: 5px;
+    display: none;
+}
+
+.checkmark_stem {
+    position: absolute;
+    width: 3px;
+    height: 9px;
+    background-color: green;
+    left: 11px;
+    top: 6px;
+}
+
+.checkmark_kick {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: green;
+    left: 8px;
+    top: 12px;
+}
+
+.cross_line1, .cross_line2 {
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background-color: red;
+    top: 0;
+}
+
+.cross_line1 {
+    transform: rotate(45deg);
+}
+
+.cross_line2 {
+    transform: rotate(-45deg);
+}
+
+
+
+#kc-error-message {
+    margin: 1.5rem 3rem 1.5rem 3rem;
+}
+
+
+@media (min-width: 768px) {
+    .kc-banner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .kc-banner img {
+        max-width: 15rem;
+    }
+
+    #kc-content {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 1rem 0 1rem 0;
+    }
+
+    #kc-content-wrapper {
+        max-width: max-content;
+        min-width: 20rem;
+    }
+
+    #kc-form-buttons {
+        margin-top: 0;
+        align-self: center;
+    }
+
+    .kc-form-options-wrapper {
+        margin-top: 0;
+        align-self: stretch;
+    }
+
+    .kc-form-group-buttons {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 7rem;
+        margin-top: 2rem;
+    }
+
+    .kc-alert {
+        max-width:25rem;
+        margin-top: 2rem;
+    }
+
+    .kc-alert-title {
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    .kc-banner div {
+        max-width: 16rem;
+    }
+
+    footer {
+        flex-grow: 1;
+    }
+
+    footer>div {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #kc-logout-confirm {
+        margin: 1rem 0 1rem 0;
+    }
+    #kc-error-message {
+        margin: 5rem 3rem 5rem 3rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-inner {
+        flex-basis: 48%;
+        flex-grow: 1;
+    }
+}

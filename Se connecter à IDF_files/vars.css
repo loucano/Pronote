@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'ibm_plex_sansbold';
+    src: url('../fonts/ibmplexsans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/ibmplexsans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ibm_plex_sansitalic';
+    src: url('../fonts/ibmplexsans-italic-webfont.woff2') format('woff2'),
+         url('../fonts/ibmplexsans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ibm_plex_sansregular';
+    src: url('../fonts/ibmplexsans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ibmplexsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('../fonts/poppins-bold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppinssemibold';
+  src: url('../fonts/poppins-semibold-webfont.woff2') format('woff2'),
+       url('../fonts/poppins-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+    --stack-b: 'ibm_plex_sansbold', Arial, sans-serif;
+    --stack-i: 'ibm_plex_sansitalic', Arial, sans-serif;
+    --stack-r: 'ibm_plex_sansregular', Arial, sans-serif;
+    --stack-title-b: 'poppinsbold', Arial, sans-serif;
+    --stack-title-sb: 'poppinssemibold', Arial, sans-serif;
+
+    --idf-text-color: var(--idf-blue-4);
+    --idf-black: #111751;
+    --idf-white: #FFFFFF;
+    --idf-red: #D71302;
+    --idf-red-4: #770A01;
+    --idf-blue-4: #2A327B;
+    --idf-blue-3: #7053CD;
+    --idf-blue-0: #EFF1FF;
+    --idf-orange: #FFC07F;
+    --idf-yellow: #EAC545;
+    --idf-gray-0: #EEE;
+    --idf-gray-1: #E0E0E0;
+    --idf-gray-2: #D0D0D0;
+    --idf-gray-3: #C0C0C0;
+    --idf-gray-4: #B0B0B0;
+    --idf-gray-5: #A0A0A0;
+    --idf-gray-6: #888;
+    --idf-gray-7: #555;
+    --idf-gray-8: #303030;
+
+    --idf-focus: var(--idf-blue-4);
+    --idf-radius: 32px;
+}
